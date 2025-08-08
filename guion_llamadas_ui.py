@@ -94,7 +94,9 @@ elif st.session_state.paso == 3:
 Cuéntame, ¿tú ya hablas inglés fluidamente?"""
     st.markdown("### ❄️ Introducción (Contactos fríos)")
     st.warning(intro)
-    st.session_state.paso = 4
+    
+    if st.button("Continuar"):
+        st.session_state.paso = 4
 
 # Paso 4: Nivel de inglés
 elif st.session_state.paso == 4:
